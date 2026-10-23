@@ -3,129 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Organizador Gráfico - Marco Teórico</title>
+<title>Organizador Gráfico - Marco Teórico | Jesús Vicencio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-body{font-family:Arial, sans-serif; background:#f5f5f3; color:#222; line-height:1.6; margin:0; padding:0}
-header{background:#1a1a1a; color:white; padding:20px; text-align:center}
-header h1{margin:0; font-size:26px}
-header p{margin:5px 0 0; color:#bbb; font-size:13px}
-.container{max-width:900px; margin:20px auto; padding:0 15px}
-.box{background:white; border:1px solid #ddd; border-radius:10px; padding:18px; margin-bottom:20px}
-.box h2{background:#eef2ff; padding:8px 12px; border-radius:6px; font-size:18px; margin:-5px -5px 12px; border-left:4px solid #3b82f6}
-.box h3{font-size:15px; margin:12px 0 4px; color:#111}
-.box p, .box li{font-size:14px}
-ul{margin:5px 0 5px 18px}
-.ej{background:#f9fafb; border-left:3px solid #10b981; padding:10px; margin:10px 0; font-size:13px}
-.ej2{background:#fff7ed; border-left:3px solid #f59e0b; padding:10px; margin:10px 0; font-size:13px}
-table{width:100%; border-collapse:collapse; font-size:13px; margin-top:10px}
-th, td{border:1px solid #ddd; padding:8px; text-align:left}
-th{background:#111; color:white; font-size:12px}
-.nota{font-size:12px; color:#666; font-style:italic; margin-top:10px}
-footer{text-align:center; padding:20px; font-size:12px; color:#999}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif; background:#fcfaf8; color:#1e1e1e; line-height:1.7}
+.header{background:#111; color:#fff; padding:50px 20px; text-align:center}
+.header h1{font-family:Playfair Display; font-size:38px; line-height:1.1; max-width:800px; margin:0 auto}
+.header h1 span{color:#a5b4fc; font-style:italic}
+.header .datos{margin-top:18px; font-size:13px; color:#9ca3af; letter-spacing:.05em}
+.container{max-width:950px; margin:0 auto; padding:40px 20px}
+.intro{text-align:center; max-width:700px; margin:0 auto 50px; color:#6b7280; font-size:14.5px}
+
+.section{margin-bottom:50px}
+.section-title{font-family:Playfair Display; font-size:28px; margin-bottom:6px}
+.section-sub{color:#9ca3af; font-size:13px; margin-bottom:20px; border-bottom:1px solid #e5e7eb; padding-bottom:12px}
+
+.card{background:white; border:1px solid #e7e5e4; border-radius:16px; padding:24px; margin-bottom:18px; box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.card h3{font-size:16px; margin-bottom:8px; color:#111}
+.card p{font-size:13.8px; color:#444}
+.card ul{margin:10px 0 0 18px; font-size:13.5px; color:#444}
+.tag{display:inline-block; background:#eef2ff; color:#4338ca; font-size:10px; font-weight:700; letter-spacing:.08em; padding:4px 10px; border-radius:999px; margin-bottom:10px; text-transform:uppercase}
+
+.ejemplo{margin-top:14px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:12px 14px; font-size:12.8px}
+.ejemplo b{color:#0f172a}
+.ejemplo.verde{border-left:4px solid #10b981; background:#f0fdf4}
+.ejemplo.azul{border-left:4px solid #3b82f6; background:#eff6ff}
+.ejemplo.naranja{border-left:4px solid #f59e0b; background:#fffbeb}
+
+.grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+
+table{width:100%; border-collapse:collapse; font-size:13px; background:white; border-radius:12px; overflow:hidden; border:1px solid #e5e7eb}
+th{background:#111; color:white; padding:10px 12px; text-align:left; font-size:11px; letter-spacing:.06em}
+td{padding:10px 12px; border-top:1px solid #f0f0f0; vertical-align:top; color:#374151}
+
+.footer{margin-top:60px; background:white; border:1px solid #e7e5e4; border-radius:16px; padding:24px; text-align:center}
+.footer h3{font-family:Playfair Display; font-size:20px; margin-bottom:8px}
+.footer p{font-size:13px; color:#6b7280}
 </style>
 </head>
 <body>
-<header>
-<h1>Organizador Gráfico: Marco Teórico, APA y Estado del Arte</h1>
-<p>Alumno: Jesús Vicencio | Bachillerato Semiescolarizado | Metodología de la Investigación</p>
-</header>
+
+<div class="header">
+<h1>Marco Teórico, <span>Normas APA 7</span> y Estado del Arte</h1>
+<div class="datos">JESÚS VICENCIO • METODOLOGÍA DE LA INVESTIGACIÓN • BACHILLERATO SEMIESCOLARIZADO • 2026</div>
+</div>
 
 <div class="container">
+<p class="intro">Este organizador gráfico lo elaboré para comprender mejor cómo se construye una investigación. Aquí plasmo lo que entendí sobre población, marco teórico, citación en APA y estado del arte, con ejemplos aplicados a mi tema de educación híbrida.</p>
 
-<div class="box">
-<h2>1. Población y Muestra - Lo que yo entendí</h2>
-<h3>¿Qué es la población?</h3>
-<p>Es a todos los que quiero estudiar, osea todo el grupo completo. No es solo decir "los alumnos", tengo que poner cuántos, de dónde y de qué año.</p>
-<div class="ej"><b>Mi ejemplo:</b> Mi población son 450 alumnos del bachillerato semiescolarizado de Xalapa, del ciclo 2025-2026. Tienen entre 16 y 19 años. Es una población finita porque si se puede contar.</div>
-<h3>¿Qué es la muestra?</h3>
-<p>Es solo una parte de esos 450, porque no puedo encuestar a todos. Tiene que ser representativa para que mis resultados si sirvan.</p>
-<div class="ej"><b>Mi ejemplo:</b> Yo voy a tomar a 45 alumnos (que es el 10%). Los voy a escoger al azar, con una tómbola. Tipo de muestreo: aleatorio simple. Criterio: que estén activos y vayan seguido a clases.</div>
-<p class="nota">*Aprendí que hay muestreo probabilístico (cuando todos tienen la misma oportunidad) y no probabilístico (cuando escojo a los que me conviene).</p>
-</div>
+<!-- 1 -->
+<div class="section">
+<div class="section-title">1. Población y Muestra</div>
+<div class="section-sub">Base metodológica para delimitar a quiénes va dirigida la investigación</div>
 
-<div class="box">
-<h2>2. Marco Teórico - En 3 partes</h2>
-<p>Esto es donde explico en que me estoy basando, no es inventar, es buscar autores que ya hablaron del tema.</p>
-<h3>A) Marco Conceptual (que significa cada cosa)</h3>
-<p>Aquí defino mis palabras clave. Por ejemplo que es educación híbrida, que es autonomía, etc. Una definición del autor y una como yo la voy a medir.</p>
-<div class="ej"><b>Ejemplo mío:</b> Educación híbrida: Según García (2022) es la combinación de clases presenciales y virtuales usando tecnología. Yo la voy a medir con un cuestionario de 20 preguntas sobre plataforma y autonomía.</div>
-
-<h3>B) Marco Histórico (de dónde viene)</h3>
-<p>Es contar la historia de mi tema, como ha cambiado con el tiempo.</p>
-<div class="ej2"><b>Como lo entendí:</b><br>
-- Antes 1960: era por correspondencia, por cartas.<br>
-- 2000: ya había e-learning, clases en compu.<br>
-- 2020: con la pandemia todos nos fuimos a híbrido a fuerza.<br>
-- Ahora 2024: ya se quedó como modelo normal. Según la UNESCO (2023) ya es parte de la educación.
-</div>
-
-<h3>C) Marco Referencial (en que teorías me apoyo)</h3>
-<p>Aquí pongo los autores importantes. Yo usé:</p>
+<div class="grid">
+<div class="card">
+<span class="tag">Población</span>
+<h3>Conjunto total que comparte una característica</h3>
+<p>La población debe delimitarse claramente en tres aspectos: contenido (qué característica), lugar (dónde) y tiempo (cuándo). Puede ser finita cuando se conoce el número exacto, o infinita cuando es muy grande y no se puede contar.</p>
 <ul>
-<li><b>Constructivismo de Piaget:</b> el alumno construye su conocimiento.</li>
-<li><b>Vygotsky:</b> se aprende con ayuda de otros, aunque sea en foros virtuales.</li>
-<li><b>Conectivismo de Siemens (2004):</b> dice que ahora aprendemos en redes, en internet.</li>
-<li><b>Freire:</b> aprendizaje autónomo, que el alumno sea independiente.</li>
+<li><b>Finita:</b> 450 alumnos matriculados</li>
+<li><b>Accesible:</b> Solo los que están en el plantel Xalapa</li>
+<li><b>Criterios:</b> Edad, asistencia, modalidad</li>
 </ul>
-<div class="ej"><b>Como lo redacté:</b> Yo me baso en Vygotsky porque explica que aunque sea virtual, seguimos aprendiendo en interacción. Y Siemens me sirve porque habla del aprendizaje en la era digital.</div>
+<div class="ejemplo verde"><b>Mi definición para mi proyecto:</b> La población está conformada por 450 estudiantes del Bachillerato Semiescolarizado del plantel Xalapa, ciclo escolar 2025-2026, con edades entre 16 y 19 años, que cursan materias en modalidad híbrida.</div>
 </div>
 
-<div class="box">
-<h2>3. Normas APA 7 - Como citar sin que me acusen de plagio</h2>
-<p>Esto me costó entender pero ya le entendí. Todo lo que no sea mío tengo que citarlo.</p>
+<div class="card">
+<span class="tag">Muestra y muestreo</span>
+<h3>Parte representativa que sí será estudiada</h3>
+<p>La muestra es un subconjunto de la población. Elegir bien la muestra permite generalizar los resultados. El muestreo es la técnica para seleccionarla.</p>
+<ul>
+<li><b>Probabilístico:</b> Aleatorio simple, estratificado, sistemático. Todos tienen oportunidad. Es el más válido científicamente.</li>
+<li><b>No probabilístico:</b> Por conveniencia o intencional. Se usa cuando no hay lista completa.</li>
+</ul>
+<div class="ejemplo azul"><b>Mi muestra:</b> Seleccionaré 45 estudiantes que representan el 10% de la población. Utilizaré muestreo aleatorio simple por tómbola. Criterios de inclusión: estar inscrito actualmente y contar con 80% de asistencia mínima. Exclusión: alumnos con baja temporal.</div>
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="section">
+<div class="section-title">2. Marco Teórico</div>
+<div class="section-sub">Fundamentación conceptual que sustenta la investigación, construido de lo general a lo específico</div>
+
+<div class="card">
+<span class="tag">A) Marco Conceptual</span>
+<h3>Definición de los términos clave de la investigación</h3>
+<p>En este apartado se aclara qué se entiende por cada variable. Es importante dar tres definiciones: conceptual (qué dice el autor), operacional (cómo se va a medir) e instrumental (con qué instrumento).</p>
+<div class="grid" style="margin-top:12px">
+<div class="ejemplo verde"><b>Variable 1 - Educación híbrida:</b><br>
+Conceptual: Modelo que combina presencialidad y virtualidad mediado por tecnología (García, 2022).<br>
+Operacional: Se medirá a través del uso de plataforma, interacción y autonomía.<br>
+Instrumental: Cuestionario de 20 ítems escala Likert.
+</div>
+<div class="ejemplo azul"><b>Variable 2 - Autonomía del aprendizaje:</b><br>
+Conceptual: Capacidad del estudiante para gestionar su propio aprendizaje (Freire, 1970).<br>
+Operacional: Se observa en la entrega puntual, participación y autoevaluación.<br>
+Instrumental: Rúbrica de observación.
+</div>
+</div>
+</div>
+
+<div class="card">
+<span class="tag">B) Marco Histórico</span>
+<h3>Evolución del objeto de estudio a través del tiempo</h3>
+<p>Permite entender cómo ha cambiado el fenómeno y por qué es relevante estudiarlo ahora. Se presenta en una línea de tiempo con hitos importantes.</p>
+<div class="ejemplo naranja">
+<b>Línea del tiempo que elaboré:</b><br><br>
+<b>1960-1980:</b> Educación por correspondencia, impulsada por la SEP para adultos.<br>
+<b>1990-2005:</b> Surge el e-learning y programas como Enciclomedia.<br>
+<b>2006-2019:</b> Consolidación de plataformas como Moodle, Classroom y Blackboard.<br>
+<b>2020-2023:</b> Pandemia por COVID-19 obliga a migrar a lo virtual. La UNESCO declara la educación híbrida como tendencia permanente.<br>
+<b>2024-2026:</b> Modelo híbrido como opción institucional en bachilleratos con recursos limitados.
+</div>
+</div>
+
+<div class="card">
+<span class="tag">C) Marco Referencial</span>
+<h3>Teorías y antecedentes que dan soporte</h3>
+<p>Aquí se ubican las teorías principales y los estudios previos. Yo me basé en cuatro teorías y varios antecedentes nacionales.</p>
+<ul>
+<li><b>Teoría constructivista - Piaget:</b> El conocimiento se construye activamente por el alumno.</li>
+<li><b>Socioconstructivismo - Vygotsky (1978):</b> El aprendizaje se da en interacción social, incluso en foros virtuales.</li>
+<li><b>Conectivismo - Siemens (2004):</b> El aprendizaje en la era digital reside en redes y conexiones.</li>
+<li><b>Pedagogía de la autonomía - Freire (1970):</b> Enseñar es crear condiciones para que el alumno aprenda por sí mismo.</li>
+</ul>
+<div class="ejemplo azul"><b>Redacción de referencia:</b> Desde la perspectiva de Vygotsky, la educación híbrida no pierde la dimensión social, sino que la traslada a entornos digitales. Siemens complementa al señalar que las plataformas se convierten en nodos de aprendizaje. Esto fundamenta por qué analizo la interacción y la autonomía como ejes centrales.</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="section">
+<div class="section-title">3. Normas APA 7ª edición</div>
+<div class="section-sub">Sistema de citación para dar crédito a los autores y evitar plagio</div>
+
+<div class="card">
 <table>
-<tr><th>Tipo</th><th>Cuando se usa</th><th>Como se pone</th><th>Mi ejemplo</th></tr>
-<tr><td><b>Cita corta</b> (menos de 40 palabras)</td><td>Cuando copio tal cual, pero poquito</td><td>Entre comillas y pongo (Autor, año, p. número)</td><td>Freire dijo "enseñar no es transferir conocimiento" (1970, p. 34).</td></tr>
-<tr><td><b>Cita larga</b> (más de 40 palabras)</td><td>Cuando es mucho texto, casi no la uso</td><td>En un bloque aparte con sangría, sin comillas</td><td>Es un párrafo largo con sangría a la izquierda...</td></tr>
-<tr><td><b>Paráfrasis (la que más voy a usar)</b></td><td>Cuando digo con mis palabras lo que otro dijo</td><td>Pongo el autor y año, sin comillas</td><td>García (2022) dice que el modelo híbrido funciona mejor cuando el profe si acompaña al alumno.</td></tr>
-<tr><td><b>Referencia</b></td><td>Al final de todo, lista de libros que use</td><td>Apellido, Inicial. (Año). <i>Título en cursiva</i>. Editorial.</td><td>García, L. (2022). <i>Educación híbrida en Latinoamérica</i>. Trillas.</td></tr>
+<tr><th>Tipo de cita</th><th>Cuándo usarla</th><th>Formato correcto</th><th>Ejemplo aplicado</th></tr>
+<tr><td><b>Cita textual corta</b><br>< 40 palabras</td><td>Cuando la frase es clave y no se puede mejorar</td><td>"Texto" (Autor, año, p. xx)</td><td>Freire (1970) sostiene que "enseñar no es transferir conocimiento, sino crear las posibilidades para su producción" (p. 34).</td></tr>
+<tr><td><b>Cita textual larga</b><br>> 40 palabras</td><td>Muy poco, solo si es indispensable</td><td>Bloque con sangría de 1.27 cm, sin comillas, doble espacio</td><td>Bloque aparte con el texto extenso y al final (Autor, año, p. xx).</td></tr>
+<tr><td><b>Paráfrasis</b><br>La más usada</td><td>Siempre que explico con mis palabras</td><td>Autor (año) explica que... / ... (Autor, año)</td><td>García (2022) argumenta que el éxito del modelo híbrido depende más del acompañamiento docente que de la tecnología en sí misma.</td></tr>
+<tr><td><b>Cita de internet</b></td><td>Para datos actuales</td><td>Organización. (Año). Título. URL</td><td>UNESCO. (2023). Informe sobre educación híbrida. https://www.unesco.org/es/education</td></tr>
+<tr><td><b>Referencia final</b></td><td>Lista al final de todo</td><td>Apellido, A. (Año). <i>Título en cursiva</i>. Editorial. DOI</td><td>Siemens, G. (2004). Connectivism: A learning theory for the digital age. <i>International Journal of Instructional Technology</i>, 2(1).</td></tr>
 </table>
-<div class="ej2"><b>Errores que yo ya no voy a cometer:</b> Poner links pelones, copiar de Wikipedia, poner la referencia pero no citarla arriba, o poner solo el apellido sin año.</div>
-</div>
-
-<div class="box">
-<h2>4. Estado del Arte - Lo más nuevo que hay</h2>
-<p>Al principio lo confundí con el histórico, pero no. El estado del arte es que se sabe AHORA, en los últimos 5 años. Es ver que ya investigaron otros y que falta.</p>
-<h3>¿Qué lleva?</h3>
-<ul>
-<li>Buscar en Google Académico artículos de 2021 a 2026</li>
-<li>Ver que encontraron y que les faltó</li>
-<li>Decir por qué mi investigación si importa</li>
-</ul>
-<table>
-<tr><th>Autor y año</th><th>Que encontró</th><th>Que le faltó</th></tr>
-<tr><td>López (2023) UNAM</td><td>Que lo híbrido ayuda a ser autónomo</td><td>Solo estudió universidad privada, no prepa pública</td></tr>
-<tr><td>Martínez (2022) Veracruz</td><td>Que faltan cursos para profes</td><td>No midió si los alumnos sacan mejores calificaciones</td></tr>
-<tr><td>UNESCO (2023)</td><td>Que lo híbrido ya se quedó para siempre</td><td>No hay estudios en escuelas semi con pocos recursos como la mía</td></tr>
-</table>
-<div class="ej"><b>Mi justificación (la parte importante):</b><br>
-Después de revisar lo anterior, me di cuenta que no hay investigaciones sobre educación híbrida en bachillerato semiescolarizado público con pocos recursos en Xalapa. Por eso mi investigación si es necesaria, porque va a aportar algo nuevo en ese contexto.
-<br><br>Esto es lo que le da valor a mi trabajo.
+<div class="ejemplo verde" style="margin-top:14px"><b>Mi regla personal para no plagiar:</b> Leo el texto, cierro el libro, lo escribo con mis palabras como si se lo explicara a un compañero y al final pongo de quién era la idea. Uso conectores como: según, de acuerdo con, como señala, desde la perspectiva de.</div>
 </div>
 </div>
 
-<div class="box" style="border:2px dashed #111">
-<h2>✔️ Lista de cotejo - Para revisar antes de entregar</h2>
-<p>Esto lo hice para checar que no me falte nada de lo que pidió la profe:</p>
+<!-- 4 -->
+<div class="section">
+<div class="section-title">4. Estado del Arte</div>
+<div class="section-sub">Revisión de lo más reciente investigado sobre el tema (2021-2026) e identificación del vacío</div>
+
+<div class="grid">
+<div class="card">
+<span class="tag">¿Qué es?</span>
+<h3>Mapa del conocimiento actual</h3>
+<p>No es historia, es el presente. Consiste en buscar qué se ha publicado en los últimos 5 años en revistas, tesis e informes, agruparlo por temas y detectar qué falta por investigar. Es lo que le da originalidad a mi trabajo.</p>
+<p style="margin-top:10px"><b>Proceso que seguí:</b></p>
 <ul>
-<li>☑ Población definida con número y lugar</li>
-<li>☑ Muestra con porcentaje y tipo de muestreo</li>
-<li>☑ Marco conceptual con mis definiciones</li>
-<li>☑ Marco histórico con fechas</li>
-<li>☑ Marco referencial con teorías (Piaget, Vygotsky, Siemens)</li>
-<li>☑ Cita corta con ejemplo</li>
-<li>☑ Cita larga explicada</li>
-<li>☑ Paráfrasis con mi redacción</li>
-<li>☑ Referencias en formato APA</li>
-<li>☑ Estado del arte con tabla y mi aporte</li>
+<li>Búsqueda en Google Académico, Redalyc y Scielo con palabras: educación híbrida, bachillerato, autonomía</li>
+<li>Selección de 8 fuentes recientes y elaboración de fichas</li>
+<li>Análisis de coincidencias y vacíos</li>
+<li>Redacción del aporte propio</li>
 </ul>
 </div>
-
+<div class="card">
+<span class="tag">Tabla de análisis</span>
+<table style="margin-top:0">
+<tr><th>Estudio</th><th>Hallazgo principal</th><th>Vacío detectado</th></tr>
+<tr><td>López (2023) UNAM. Educación híbrida en prepa</td><td>Mejora la autonomía y autorregulación</td><td>Solo en universidad privada con recursos altos</td></tr>
+<tr><td>Martínez (2022) UV. Bachillerato Veracruz</td><td>Falta capacitación docente para lo híbrido</td><td>No midió rendimiento académico</td></tr>
+<tr><td>Ramírez (2021) Tesis Xalapa</td><td>Los alumnos prefieren presencial</td><td>Muestra muy pequeña (20 alumnos)</td></tr>
+<tr><td>UNESCO (2023) Informe LATAM</td><td>Lo híbrido llegó para quedarse post-pandemia</td><td>No hay datos específicos en contextos semi-públicos con pocos recursos</td></tr>
+</table>
+<div class="ejemplo azul"><b>Mi aporte y justificación final:</b> A partir de la revisión, identifico que no existen estudios sobre educación híbrida en bachillerato semiescolarizado público con recursos limitados en Xalapa, Veracruz. La mayoría se centra en universidades privadas. Por ello, esta investigación resulta pertinente, ya que aportará información contextualizada sobre autonomía e interacción en una población poco estudiada.</div>
+</div>
+</div>
 </div>
 
-<footer>
-Trabajo realizado por Jesús Vicencio - 2026<br>
-Organizador gráfico para Metodología de la Investigación
-</footer>
+<div class="footer">
+<h3>Reflexión final</h3>
+<p>Elaborar este organizador me ayudó a ordenar mis ideas. Comprendí que el marco teórico no es copiar definiciones, sino construir un sustento con autores que respalden lo que quiero investigar. Las normas APA me permiten reconocer el trabajo de otros y el estado del arte me muestra que mi tema sí tiene valor porque hay un vacío que puedo aportar.</p>
+<p style="margin-top:12px; color:#111; font-weight:600; font-size:12px">Jesús Vicencio • 2026 • Trabajo académico sin fines de lucro</p>
+</div>
+
+</div>
 </body>
 </html>
