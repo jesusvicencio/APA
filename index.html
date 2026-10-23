@@ -3,108 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Organizador Gráfico - Marco Teórico, APA y Estado del Arte</title>
+<title>Organizador Gráfico Completo - Marco Teórico, APA 7 y Estado del Arte</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fraunces:opsz,wght@9..144,700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fcfcf9;--ink:#0f172a;--muted:#64748b;--line:#e7e5e4;--blue:#2563eb;--blue2:#eff6ff;--card:#ffffff}
+:root{--ink:#0f172a;--muted:#64748b;--line:#e8e6e1;--blue:#2563eb;--paper:#fefcfb}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:Inter,sans-serif;line-height:1.6}
-.top{position:sticky;top:0;z-index:50;background:rgba(252,252,249,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:12px 24px}
-.hero{text-align:center;padding:72px 20px 32px;max-width:900px;margin:0 auto}
-.hero h1{font-family:Fraunces;font-size:clamp(36px,6vw,64px);line-height:.9;letter-spacing:-.04em}
-.hero h1 span{color:var(--blue)}
-.hero p{color:var(--muted);max-width:680px;margin:16px auto 0;font-size:16px}
-.wrap{max-width:1100px;margin:0 auto;padding:0 20px 80px}
-.section{margin-top:56px}
-.s-head{margin-bottom:18px;display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.s-head h2{font-family:Fraunces;font-size:38px;line-height:.9;letter-spacing:-.03em}
-.s-head p{color:var(--muted);font-size:14px;max-width:480px}
+body{background:var(--paper);color:var(--ink);font-family:Inter,sans-serif;line-height:1.65}
+.top{position:sticky;top:0;z-index:10;background:rgba(254,252,251,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:12px 22px;display:flex;justify-content:space-between;font-size:12px}
+.hero{max-width:1000px;margin:0 auto;text-align:center;padding:80px 22px 36px}
+.hero h1{font-family:Fraunces;font-size:clamp(34px,6.5vw,72px);line-height:.9;letter-spacing:-.05em}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero .sub{color:var(--muted);max-width:760px;margin:18px auto 0;font-size:15px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px 90px}
+.pill{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.sec{margin-top:72px}
+.sec h2{font-family:Fraunces;font-size:clamp(28px,4vw,48px);line-height:.95;letter-spacing:-.03em;margin-bottom:8px}
+.sec .lead{color:var(--muted);font-size:14px;max-width:700px;margin-bottom:22px}
 .grid{display:grid;gap:16px}
-.g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:1fr 1fr 1fr}
-@media(max-width:900px){.g2,.g3{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
-.card:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(0,0,0,.06)}
-.kicker{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.kicker i{width:24px;height:24px;border-radius:8px;background:var(--blue2);display:inline-flex;align-items:center;justify-content:center;font-style:normal}
-.card h3{font-size:18px;line-height:1.15;margin-bottom:8px}
-.card p{font-size:13.5px;color:#334155}
-.callout{background:#f1f5f9;border-radius:12px;padding:12px 14px;margin-top:12px;font-size:12.5px;border-left:3px solid var(--blue)}
-.badge{display:inline-block;font-size:10px;font-weight:800;padding:5px 10px;border-radius:999px;background:#111;color:#fff;margin-bottom:12px}
-.dark{background:#0f172a;color:#fff;border-color:#0f172a}
-.dark p{color:#cbd5e1}
-.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
-th{text-align:left;background:#0f172a;color:#fff;padding:12px 14px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
-.btn{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700;font-size:13px;cursor:pointer}
-.btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:980px){.g2,.g3{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.card h3{font-size:18px;line-height:1.2;margin-bottom:6px}
+.card p, .card li{font-size:13.5px;color:#334155}
+.card ul{padding-left:16px;margin-top:8px}
+.mini{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.call{background:#f8fafc;border-radius:14px;padding:14px;margin-top:12px;font-size:12.5px;border:1px solid #e2e8f0}
+.call b{color:var(--ink)}
+.example{background:#0f172a;color:#fff;border-radius:18px;padding:22px}
+.example h3{color:#fff} .example p{color:#cbd5e1}
+.example .mini{color:#7dd3fc}
+.table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);font-size:13px}
+.table th{background:#0f172a;color:#fff;padding:12px;text-align:left;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.table td{padding:12px;border-top:1px solid var(--line);vertical-align:top}
+.highlight{border:2px solid #0f172a;box-shadow:8px 8px 0 #0f172a}
 </style>
 </head>
 <body>
-<div class="top"><b>APA • Organizador Gráfico</b><span style="font-size:11px;color:var(--muted)">Población • Marco Teórico • APA 7 • Estado del Arte</span></div>
+<div class="top"><b>MARCO TEÓRICO • APA 7 • ESTADO DEL ARTE</b><span style="color:var(--muted)">V3 Mejorada + Explicaciones</span></div>
+
 <div class="hero">
-<h1>Marco Teórico, <span>Normas APA 7</span> y Estado del Arte</h1>
-<p>Organizador gráfico integrado con todos los elementos de la lista de cotejo: definición, características y ejemplos aplicados.</p>
+<div class="pill">📚 Organizador Gráfico Académico • Entrega 10%</div>
+<h1>Marco Teórico, <em>Normas APA</em> y Estado del Arte</h1>
+<p class="sub">Guía completa con definiciones operacionales, características, funciones y ejemplos redactados listos para tu investigación. Incluye todo lo de la lista de cotejo.</p>
 </div>
+
 <div class="wrap">
 
-<div class="section">
-<div class="s-head"><div><h2>1. Población y Muestra</h2></div><p>Delimitación metodológica: a quién estudias y cómo lo seleccionas.</p></div>
+<!-- POBLACION -->
+<div class="sec">
+<h2>1. Población y Muestra</h2>
+<p class="lead">No puedes investigar a todos. Aquí decides a quién sí y por qué. Es lo primero que revisa tu asesor metodológico.</p>
 <div class="grid g2">
-<div class="card"><div class="kicker"><i>◍</i> POBLACIÓN</div><h3>Universo total de estudio</h3><p>Conjunto total de individuos que comparten una característica observable y constituyen el objeto de estudio.</p><div class="callout"><b>Ejemplo:</b> 450 estudiantes de bachillerato semiescolarizado en Xalapa, Veracruz (2025-2026).</div></div>
-<div class="card"><div class="kicker"><i>◍</i> MUESTRA</div><h3>Subconjunto representativo</h3><p>Parte de la población que se estudia directamente. Debe conservar representatividad.</p><div class="callout"><b>Ejemplo:</b> 45 estudiantes (10%) seleccionados por muestreo aleatorio simple. Criterio: alumnos activos con >80% de asistencia.</div></div>
+<div class="card highlight"><div class="mini">1A • POBLACIÓN</div><h3>Conjunto total con la característica que estudias</h3><p><b>Definición:</b> Universo completo. Debe estar delimitada por tiempo, espacio y característica.</p><ul><li><b>Finita:</b> Se puede contar (ej. 450 alumnos)</li><li><b>Infinita:</b> No se puede contar (ej. usuarios de internet)</li><li><b>Accesible:</b> La que realmente puedes estudiar</li></ul><div class="call"><b>Cómo redactarla bien:</b><br>“La población estuvo conformada por 450 estudiantes del Bachillerato Semiescolarizado del plantel Xalapa, ciclo 2025-2026, con edades entre 16 y 19 años.”<br><br><b>Error común:</b> Poner “toda la escuela” sin números.</div></div>
+<div class="card"><div class="mini">1B • MUESTRA + MUESTREO</div><h3>La parte que SÍ vas a encuestar</h3><p><b>Definición:</b> Subconjunto representativo de la población. Su tamaño depende de qué tan homogénea es tu población.</p><ul><li><b>Probabilístico:</b> Todos tienen oportunidad (aleatorio simple, estratificado, sistemático) – Ideal para generalizar</li><li><b>No probabilístico:</b> Por conveniencia, intencional, bola de nieve – Útil cuando no hay lista completa</li></ul><div class="call"><b>Fórmula rápida:</b> Para población finita de 450, con 95% confianza y 5% error = 208 aprox. Para fines escolares puedes usar 10-30%.<br><br><b>Ejemplo redactado:</b> “Se seleccionó una muestra de 45 estudiantes (10%) mediante muestreo aleatorio simple, utilizando tómbola. Criterios de inclusión: estar activo y tener >80% de asistencia. Exclusión: baja temporal.”</div></div>
 </div>
 </div>
 
-<div class="section">
-<div class="s-head"><h2>2. Marco Teórico</h2><p>Sustento científico: en qué teorías te apoyas.</p></div>
+<!-- MARCO -->
+<div class="sec">
+<h2>2. Marco Teórico en 3 capas</h2>
+<p class="lead">Es el corazón de tu investigación. Si esto está mal, todo lo demás se cae. Se construye de lo general a lo específico.</p>
 <div class="grid g3">
-<div class="card"><div class="kicker"><i>C</i> CONCEPTUAL</div><h3>Qué significa cada cosa</h3><p>Definición clara y operativa de conceptos y variables.</p><div class="callout"><b>Ej:</b> Educación híbrida = modalidad que combina presencialidad y virtualidad con mediación tecnológica (García, 2022).</div></div>
-<div class="card"><div class="kicker"><i>H</i> HISTÓRICO</div><h3>Cómo ha evolucionado</h3><p>Línea de tiempo de antecedentes relevantes.</p><div class="callout"><b>Ej:</b> 1960 Correspondencia → 2000 E-learning → 2020 Auge híbrido por COVID-19 → 2024 Modelo normalizado.</div></div>
-<div class="card"><div class="kicker"><i>R</i> REFERENCIAL</div><h3>En qué teorías te basas</h3><p>Teorías y estudios previos que fundamentan tu investigación.</p><div class="callout"><b>Incluye:</b> Constructivismo (Piaget, Vygotsky), Conectivismo (Siemens), Aprendizaje autónomo (Freire).</div></div>
+<div class="card"><div class="mini">CAPA 1 • CONCEPTUAL</div><h3>¿Qué significa cada palabra de tu título?</h3><p>Define variables. Sin esto, tu lector no sabe de qué hablas.</p><ul><li>Definición conceptual (diccionario, autor)</li><li>Definición operacional (cómo la mides)</li><li>Definición instrumental (con qué instrumento)</li></ul><div class="call"><b>Ejemplo variable 1:</b><br>Conceptual: Educación híbrida es la combinación de presencial y virtual (García, 2022).<br>Operacional: Se medirá con cuestionario de 20 ítems sobre uso de plataforma, interacción y autonomía.<br>Instrumental: Escala Likert 1-5.</div></div>
+<div class="card"><div class="mini">CAPA 2 • HISTÓRICO</div><h3>¿De dónde viene tu tema?</h3><p>Cuenta la historia en 4 etapas. No hagas un resumen aburrido, haz una línea de tiempo con hitos.</p><div class="call">
+<b>Línea ejemplo:</b><br>
+<b>1960-1980:</b> Educación por correspondencia (SEP)<br>
+<b>1990-2005:</b> Aparición de E-learning y Enciclomedia<br>
+<b>2006-2019:</b> Plataformas Moodle, Classroom<br>
+<b>2020-2026:</b> Pandemia obliga a hibridar, se queda como modelo permanente según UNESCO (2023)<br><br>
+<b>Para qué sirve:</b> Demostrar que tu tema no salió de la nada.
+</div></div>
+<div class="card"><div class="mini">CAPA 3 • REFERENCIAL</div><h3>¿En qué autores te paras?</h3><p>Aquí van teorías y estudios previos. Mínimo 3 teorías y 5 antecedentes.</p><ul><li><b>Teorías base:</b> Constructivismo (Piaget), Socioconstructivismo (Vygotsky), Conectivismo (Siemens, 2004), Aprendizaje autónomo (Freire)</li><li><b>Antecedentes:</b> Tesis nacionales e internacionales sobre híbrido en media superior</li></ul><div class="call"><b>Ejemplo de redacción:</b><br>“Desde el socioconstructivismo de Vygotsky (1978), se entiende que el aprendizaje se construye en interacción social, lo cual en lo híbrido se traslada a foros virtuales. Siemens (2004) aporta que en la era digital el aprendizaje reside en redes...”</div></div>
 </div>
 </div>
 
-<div class="section">
-<div class="s-head"><h2>3. Normas APA 7ª edición</h2><p>Cómo citar sin plagiar y dar crédito correcto.</p></div>
-<div class="tableWrap">
-<table>
-<thead><tr><th>Elemento</th><th>Definición</th><th>Formato</th><th>Ejemplo</th></tr></thead>
-<tbody>
-<tr><td><b>Cita corta</b><br>&lt;40 palabras</td><td>Reproduces textual la idea, entre comillas.</td><td>"Texto" (Apellido, año, p. xx)</td><td>"La educación híbrida potencia la autonomía" (García, 2022, p. 45).</td></tr>
-<tr><td><b>Cita larga</b><br>&gt;40 palabras</td><td>Bloque aparte, sin comillas, sangría 1.27 cm.</td><td>Bloque con sangría. (Apellido, año, p. xx)</td><td>Bloque con sangría...</td></tr>
-<tr><td><b>Paráfrasis</b></td><td>Explicas con tus palabras la idea del autor.</td><td>Apellido (año) explica que... / ... (Apellido, año).</td><td>García (2022) señala que la modalidad híbrida funciona mejor con acompañamiento docente.</td></tr>
-<tr><td><b>Referencia</b></td><td>Lista final alfabética, sangría francesa.</td><td>Apellido, A. A. (Año). <i>Título</i>. Editorial.</td><td>García, L. M. (2022). <i>Educación híbrida</i>. Trillas.</td></tr>
-</tbody>
+<!-- APA -->
+<div class="sec">
+<h2>3. Normas APA 7 - Todo explicado</h2>
+<p class="lead">APA no es adornar, es evitar plagio y dar crédito. 90% de tu trabajo debe ser paráfrasis tuya + cita, solo 10% citas textuales.</p>
+<table class="table">
+<tr><th>Tipo</th><th>¿Cuándo se usa?</th><th>Formato exacto</th><th>Ejemplo perfecto</th></tr>
+<tr><td><b>Cita corta directa</b><br>&lt;40 palabras</td><td>Cuando la frase del autor es tan perfecta que no la puedes mejorar.</td><td>Entre comillas + (Autor, año, p. xx)</td><td>De acuerdo con Freire (1970), "enseñar no es transferir conocimiento" (p. 34).</td></tr>
+<tr><td><b>Cita larga directa</b><br>&gt;40 palabras</td><td>Solo si es indispensable. Máximo 2 en todo tu trabajo.</td><td>Bloque separado, sin comillas, sangría de 1.27 cm, doble espacio. Al final (Autor, año, p. xx).</td><td style="font-style:italic">La educación híbrida requiere repensar el rol docente... [40+ palabras en bloque]</td></tr>
+<tr><td><b>Paráfrasis (LA MÁS IMPORTANTE)</b></td><td>Siempre. Explicas con tus palabras lo que dijo otro.</td><td>Autor (año) dijo que... / ...lo anterior (Autor, año). No lleva comillas ni página obligatoria, pero se recomienda.</td><td>García (2022) argumenta que el éxito del modelo híbrido depende más del acompañamiento que de la tecnología misma.</td></tr>
+<tr><td><b>Cita de página web</b></td><td>Para datos actuales, UNESCO, INEGI, SEP</td><td>Organización. (Año). Título. Sitio. URL</td><td>UNESCO. (2023). La educación híbrida post-pandemia. https://unesco.org/...</td></tr>
+<tr><td><b>Referencia final</b></td><td>Lista al final, solo lo que sí citaste, orden alfabético, sangría francesa, cursiva en libro/revista.</td><td>Apellido, A. A. (Año). <i>Título en cursiva</i>. Editorial. DOI</td><td>Siemens, G. (2004). Connectivism: A learning theory for the digital age. <i>International Journal of Instructional Technology</i>.</td></tr>
 </table>
+<div class="grid g2" style="margin-top:16px">
+<div class="example"><div class="mini">TIP PARA NO PLAGIAR</div><h3>Regla de oro: Lee, cierra el libro, escribe con tus palabras, y luego cita.</h3><p>Usa conectores: Según..., De acuerdo con..., Como señala..., Desde la perspectiva de... Y verifica tu % de plagio con herramienta gratuita antes de entregar.</p></div>
+<div class="card"><div class="mini" style="color:#dc2626">ERRORES QUE BAJAN 2 PUNTOS AUTOMÁTICO</div><h3>Evita esto:</h3><ul><li>Poner link crudo: https://google.com en referencias</li><li>Usar Wikipedia, Rincón del Vago, BuenasTareas</li><li>Citar sin referencia final o referencia sin cita (deben coincidir 1 a 1)</li><li>Poner (García) sin año</li><li>Copiar y pegar con comillas pero sin página</li></ul></div>
 </div>
 </div>
 
-<div class="section">
-<div class="s-head"><h2>4. Estado del Arte</h2><p>Panorama ACTUAL de lo que se sabe.</p></div>
+<!-- ESTADO DEL ARTE -->
+<div class="sec">
+<h2>4. Estado del Arte - El más difícil, bien explicado</h2>
+<p class="lead">No es marco histórico. Es responder: ¿Qué se ha investigado en los últimos 5 años sobre mi tema? ¿Qué falta por investigar? Ahí es donde tu investigación vale.</p>
 <div class="grid g2">
-<div class="card"><span class="badge">Definición</span><h3>Fotografía del conocimiento actual</h3><p>Recopilación crítica y actualizada (últimos 5 años) de investigaciones, avances y vacíos sobre tu tema.</p></div>
-<div class="card" style="background:#eff6ff;border-color:#bfdbfe"><div class="kicker">ESTRUCTURA EN 2 PARTES</div><div class="grid g2" style="gap:12px;margin-top:6px"><div><h3 style="font-size:15px">¿Qué se sabe?</h3><p style="font-size:12.5px">Que la híbrida mejora autonomía, existen plataformas LMS, requiere competencias digitales.</p></div><div><h3 style="font-size:15px">¿Qué falta?</h3><p style="font-size:12.5px">Cómo funciona en bachillerato semiescolarizado público con recursos limitados en Veracruz. Tu aporte.</p></div></div></div>
+<div class="card"><div class="mini">¿QUÉ ES?</div><h3>Mapa del conocimiento actual (2021-2026)</h3><p>Es un análisis crítico, no un listado. Agrupas investigaciones por temas, metodologías y hallazgos. Mínimo 8 fuentes recientes (artículos científicos, tesis, informes UNESCO/SEP).</p><div class="call"><b>Estructura profesional:</b><br>1. Búsqueda en Google Académico, Redalyc, Scielo con palabras clave<br>2. Ficha: Autor, año, objetivo, método, hallazgo, vacío<br>3. Agrupa por coincidencias<br>4. Concluye con tu aporte original</div></div>
+<div class="card highlight"><div class="mini">EJEMPLO REAL DE TABLA</div><table class="table" style="font-size:11.5px"><tr><th>Estudio</th><th>Hallazgo</th><th>Vacío</th></tr><tr><td>López (2023) - UNAM - Prepa híbrida</td><td>Mejora autonomía</td><td>Solo en universidad privada</td></tr><tr><td>Martínez (2022) - Veracruz - Bachillerato</td><td>Falta capacitación docente</td><td>No midió rendimiento</td></tr><tr><td>UNESCO (2023) - Latinoamérica</td><td>Híbrido llegó para quedarse</td><td>Falta estudio en contexto rural/semipúblico</td></tr></table><div class="call" style="margin-top:10px"><b>Tu hueco de investigación (donde entras tú):</b><br>“A pesar de lo anterior, no se encontraron estudios sobre educación híbrida en bachillerato semiescolarizado público con recursos limitados en Xalapa, Veracruz. De ahí la pertinencia de esta investigación.”<br><br>Esta frase vale 2 puntos sola.</div></div>
 </div>
 </div>
 
-<div class="section">
-<div style="background:#0f172a;border-radius:20px;padding:24px;color:#fff">
-<b style="font-size:12px;letter-spacing:.12em;color:#d9ff00">LISTA DE COTEJO - VERIFICA ANTES DE ENTREGAR</b>
-<div class="grid g2" style="margin-top:16px;gap:8px">
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ Población definida</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ Muestra definida</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ Marco Conceptual</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ Marco Histórico</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ Marco Referencial</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ APA Citas</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ APA Paráfrasis</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ APA Referencias</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ Estado del arte</div>
-<div style="font-size:13px;padding:8px 0;border-bottom:1px solid #1e293b">✔️ Ejemplos reales</div>
+<div class="sec">
+<div style="background:#0f172a;border-radius:22px;padding:26px;color:#fff">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px"><b style="color:#d9ff00;letter-spacing:.1em;font-size:11px">CHECKLIST FINAL - ¿YA TIENES TODO LO DE LA LISTA DE COTEJO?</b><span style="color:#94a3b8;font-size:11px">Marca mentalmente</span></div>
+<div class="grid g2" style="gap:8px;font-size:13px">
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ Población con N, lugar, tiempo y características</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ Muestra con % o fórmula y tipo de muestreo</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ Marco Conceptual con 3 definiciones operacionales</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ Marco Histórico con 4 etapas fechadas</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ Marco Referencial con 3 teorías + 5 antecedentes</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ APA Cita corta con ejemplo</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ APA Cita larga en bloque</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ APA Paráfrasis (modelo de redacción)</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ APA Referencias con formato completo y DOI/URL</div>
+<div style="padding:8px 0;border-bottom:1px solid #1e293b">✅ Estado del Arte con tabla y hueco de investigación identificado</div>
 </div>
+<p style="margin-top:18px;color:#7dd3fc;font-size:12px">Consejo final: Imprime en PDF este organizador y úsalo como guía mientras redactas tu marco teórico en Word. Así no se te olvida nada.</p>
 </div>
-<div style="margin-top:16px;display:flex;gap:10px"><button class="btn btn-primary" onclick="window.print()">🖨️ Imprimir / PDF</button></div>
+<div style="margin-top:16px;display:flex;gap:10px"><button onclick="window.print()" style="padding:12px 20px;border-radius:999px;background:var(--blue);color:#fff;border:0;font-weight:800;cursor:pointer">🖨️ Guardar en PDF para entregar</button></div>
 </div>
 
 </div>
